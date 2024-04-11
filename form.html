@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/icon-white.svg" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/icon.svg" alt="Logo">
+      <h1 class="titulo-header">PLATAFORMA DIGITAL <br> DE GESTIÓN JUDICIAL</h1>
+    </div>
+    <nav class="barra-navegacion">
+      <ul class="lista-navegacion">
+        <li class="elemento-lista"><a class="enlace" href="index.html">INICIO</a></li>
+        <li class="elemento-lista"><a class="enlace" href="form.html">FORMULARIO</a></li>
+        <li class="elemento-lista"><a class="enlace" href="noticias.html">NOTICIAS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="formulario" id="formulario">
+      <img src="img/form.svg" class="logo-titulo" alt="Formulario">
+      <h1 class="h-nav">FORMULARIO <br>DE<br>CONTACTO</h1>
+      <p class="text-box">
+        Los datos suministrados en este formulario tienen CARÁCTER DE DECLARACIÓN JURADA y serán tratados en forma
+        reservada.
+      </p>
+
+      <form>
+        <div class="form-group">
+          <label for="apellido"><span class="important">*</span>Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nombre"><span class="important">*</span>Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo_documento"><span class="important">*</span>Tipo de documento:</label>
+          <select name="tipo_documento" id="tipo_documento">
+            <option value="DNI">DNI</option>
+            <option value="LibretaCivica">Libreta Civica</option>
+            <option value="Pasaporte">Pasaporte</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="numero_documento"><span class="important">*</span>Número de documento:</label>
+          <input type="text" name="numero_documento" id="numero_documento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sexo"><span class="important">*</span>Sexo:</label>
+          <select name="sexo" id="sexo">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="estado_civil"><span class="important">*</span>Estado Civil:</label>
+          <select name="estado_civil" id="estado_civil">
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viudo">Viudo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="numero_cuit"><span class="important">*</span>N° de CUIT:</label>
+          <input type="number" name="numero_cuit" id="numero_cuit" min="0" max="99999999999" required>
+        </div>
+
+        <div class="form-group">
+          <label for="domicilio"><span class="important">*</span>Domicilio Real:</label>
+          <input type="text" name="domicilio" id="domicilio">
+        </div>
+
+        <div class="form-group">
+          <label for="ocupacion"><span class="important">*</span>Ocupación:</label>
+          <select name="ocupacion" id="ocupacion">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Docente">Docente</option>
+            <option value="Empleado">Empleado</option>
+            <option value="Desempleado">Desempleado</option>
+            <option value="Jubilado">Jubilado</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono"><span class="important">*</span>Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="matricula_profesional"><span class="important">*</span>Matrícula Profesional:</label>
+          <input type="number" name="matricula_profesional" id="matricula_profesional">
+        </div>
+
+        <div class="form-group">
+          <label for="domicilio_laboral"><span class="important">*</span>Domicilio Laboral:</label>
+          <input type="text" name="domicilio_laboral" id="domicilio_laboral">
+        </div>
+
+        <div class="form-group">
+          <label for="titulo1"><span class="important">*</span>Título 1:</label>
+          <input type="file" name="titulo1" id="titulo1">
+        </div>
+
+        <div class="form-group">
+          <label for="titulo2">Título 2:</label>
+          <input type="file" name="titulo2" id="titulo2">
+        </div>
+
+        <button class="form-button" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="main-footer">
+      <div class="contact-foteer">
+        <h3>CONTACTO</h3>
+        <div class="contact-info">
+          <p>San Salvador de Jujuy, Jujuy, Argentina</p>
+        </div>
+        <div class="contact-info">
+          <p>0388-4231888</p>
+        </div>
+        <div class="contact-info">
+          <a class="enlace" href="mailto:prensa@justiciajujuy.gov.ar">prensa@justiciajujuy.gov.ar</a>
+        </div>
+      </div>
+      <div class="sitios-footer">
+        <h3>SITIOS DE INTERÉS</h3>
+        <ul>
+          <li><a href="#" class="enlace">Poder Judicial de Jujuy</a></li>
+          <li><a href="#" class="enlace">Ministerio de Justicia y Derechos Humanos</a></li>
+          <li><a href="#" class="enlace">Ministerio Público de la Acusación</a></li>
+          <li><a href="#" class="enlace">Ministerio Público de la Defensa</a></li>
+          <li><a href="#" class="enlace">Ministerio Público Fiscal</a></li>
+        </ul>
+      </div>
+      <div class="reparticion-footer">
+        <img src="img/icon.svg" alt="Icono">
+        <p>Departamento de Sistemas <br>y <br>Tecnologías de la Información<br>Poder Judicial</p>
+      </div>
+    </section>
+    <section class="top">
+      <a href="#top" class="enlace">IR ARRIBA </a>
+    </section>
+  </footer>
+</body>
+
+</html>
